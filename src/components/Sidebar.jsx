@@ -42,6 +42,17 @@ const Sidebar = () => {
                         <li>
                             <button
                                 onClick={() => {
+                                    handleTabClick('Customers');
+                                    navigate('/customers')
+                                }}
+                                className={`w-full text-left text-[#4a90e2] cursor-pointer text-lg font-semibold  px-6 py-2  hover:bg-gray-700 ${isActive('Customers')}`}
+                            >
+                                Customers
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                onClick={() => {
                                     handleTabClick('Orders');
                                     navigate('/orders')
                                 }}

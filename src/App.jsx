@@ -7,12 +7,14 @@ import Orders from './pages/Orders'
 import Payments from './pages/Payments'
 import Products from './pages/Products'
 import Employees from './pages/Employees'
+import Customers from './pages/Customers'
 
 const App = () => {
   return (
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/customers" element={<Customers />} />
         <Route path="/employees" element={<Employees />} />
         <Route path="/offices" element={<Offices />} />
         <Route path="/orders" element={<Orders />} />
