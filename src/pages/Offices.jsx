@@ -5,7 +5,7 @@ import { IoSearch } from 'react-icons/io5'
 const Offices = () => {
     const offices = [
         { officeName: 'Office A', officeCode: '12357', city: 'Nairobi', phone: '+254859869589959', addressLine1: 'Address Line A', addressLine2: 'Address Line B', state: '213-00100, Kileleshwa', country: 'Kenya' },
-        { officeName: 'Office B', officeCode: '78796', city: 'Mombasa', phone: '254859869589959', addressLine1: 'Address Line A', addressLine2: 'Address Line B', state: '213-00100, Kileleshwa', country: 'Kenya' },
+        { officeName: 'Office B', officeCode: '78796', city: 'Mombasa', phone: '+254859869589959', addressLine1: 'Address Line A', addressLine2: 'Address Line B', state: '213-00100, Kileleshwa', country: 'Kenya' },
     ];
     return (
         <div className="max-w-4xl mx-auto px-4 py-8">

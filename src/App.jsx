@@ -8,6 +8,9 @@ import Payments from './pages/Payments'
 import Products from './pages/Products'
 import Employees from './pages/Employees'
 import Customers from './pages/Customers'
+import NotFound from './pages/NotFound'
+import ProductCard from './components/ProductCard'
+import OrderCard from './components/OrderCard'
 
 const App = () => {
   return (
@@ -20,6 +23,9 @@ const App = () => {
         <Route path="/orders" element={<Orders />} />
         <Route path="/payments" element={<Payments />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/product" element={<ProductCard />} />
+        <Route path="/order" element={<OrderCard />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   )

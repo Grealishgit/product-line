@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { IoSearch } from 'react-icons/io5';
+import { useNavigate } from 'react-router-dom';
 
 const Products = () => {
     const products = [
@@ -9,6 +10,8 @@ const Products = () => {
         { code: '76847', name: 'Product C', price: 'Kshs 7890', stock: 31 },
         { code: '24356', name: 'Product D', price: 'Kshs 5000', stock: 20 },
     ];
+
+    const navigate = useNavigate();
 
     return (
         <div className="max-w-4xl mx-auto px-4 py-8">
@@ -26,7 +29,7 @@ const Products = () => {
                         <IoSearch className="w-5 h-5" />
                     </span>
                 </div>
-                <button className="bg-[#4a90e2] cursor-pointer text-white px-8 py-1.5 
+                <button onClick={() => navigate('/product')} className="bg-[#4a90e2] cursor-pointer text-white px-8 py-1.5 
                 rounded hover:bg-blue-400 transition">
                     Add Product
                 </button>

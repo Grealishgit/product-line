@@ -1,6 +1,7 @@
 import React from 'react'
 import { BsMenuButton } from 'react-icons/bs';
 import { IoSearch } from 'react-icons/io5'
+import { useNavigate } from 'react-router-dom';
 
 const Orders = () => {
     const orders = [
@@ -9,13 +10,15 @@ const Orders = () => {
         { orderId: '012343', customerId: '003', orderDate: '6/7/2024', requireDate: '6/7/2024', shippingDate: '6/7/2024', status: 'Pending' },
         { orderId: '96900', customerId: '004', orderDate: '23/1/2025', requireDate: '23/1/2025', shippingDate: '23/1/2025', status: 'Completed' },
     ];
+
+    const navigate = useNavigate();
     return (
         <div className="max-w-4xl mx-auto px-4 py-8">
             <div className='items-center justify-center w-full flex flex-col mb-6'>
                 <h1 className="text-3xl font-bold text-center mb-6">Customers</h1>
-                <button className="bg-[#4a90e2] cursor-pointer text-white px-8 py-1.5 
+                <button onClick={() => navigate('/order')} className="bg-[#4a90e2] cursor-pointer text-white px-8 py-1.5 
                     rounded hover:bg-blue-400 transition">
-                    Add Customer
+                    Add Order
                 </button>
             </div>
             <div className="flex items-center justify-between mb-4">
