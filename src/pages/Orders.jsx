@@ -22,7 +22,7 @@ const Orders = () => {
                 <div className="relative">
                     <input
                         type="text"
-                        placeholder="Search orders"
+                        placeholder="Search order"
                         className="border-2 border-black bg-[#f5f5f5] rounded-md py-2 pl-13 pr-4
                          "
                     />
@@ -45,12 +45,12 @@ const Orders = () => {
                 <tbody>
                     {orders.map((order, idx) => (
                         <tr key={idx} className="hover:bg-gray-50">
-                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{order.orderId}</td>
-                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{order.customerId}</td>
-                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{order.orderDate}</td>
-                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{order.requireDate}</td>
-                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{order.shippingDate}</td>
-                            <td className="border-t font-medium text-center border-[#42befb]  py-2 whitespace-nowrap">
+                            <td className="border-t-2 font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{order.orderId}</td>
+                            <td className="border-t-2 font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{order.customerId}</td>
+                            <td className="border-t-2 font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{order.orderDate}</td>
+                            <td className="border-t-2 font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{order.requireDate}</td>
+                            <td className="border-t-2 font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{order.shippingDate}</td>
+                            <td className="border-t-2 font-medium text-center border-[#42befb]  py-2 whitespace-nowrap">
                                 <button className={`rounded-lg px-5 text-white py-0.5
                                 ${order.status === 'Shipped' ? 'bg-[#4a90e2]' : order.status === 'Pending' ? 'bg-[#5b7798] ' : 'bg-[#4a90e2]'}
                                  whitespace-nowrap`}>
