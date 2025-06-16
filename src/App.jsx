@@ -1,7 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Dashboard from './pages/Dashboard'
-import Layout from './Layout/Layout'
 import Offices from './pages/Offices'
 import Orders from './pages/Orders'
 import Payments from './pages/Payments'
@@ -11,6 +10,7 @@ import Customers from './pages/Customers'
 import NotFound from './pages/NotFound'
 import ProductCard from './components/ProductCard'
 import OrderCard from './components/OrderCard'
+import Layout from './Layout/Layout'
 
 const App = () => {
   return (
