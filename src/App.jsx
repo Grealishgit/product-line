@@ -10,7 +10,7 @@ import Customers from './pages/Customers'
 import NotFound from './pages/NotFound'
 import ProductCard from './components/ProductCard'
 import OrderCard from './components/OrderCard'
-import Layout from './Layout/Layout'
+import Layout from './layout/Layout'
 
 
 const App = () => {
