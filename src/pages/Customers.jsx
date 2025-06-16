@@ -2,7 +2,7 @@ import React from 'react'
 import { IoSearch } from 'react-icons/io5';
 
 const Customers = () => {
-    const products = [
+    const customers = [
         { customerId: '001', customer: 'Customer A', fname: 'Customer A', lname: 'Customer A', phone: '01111', Address: 'Address 1A', Address2: 'Address 2A', City: 'City A', State: 'State A', Sales: '001A' },
         { customerId: '002', customer: 'Customer B', fname: 'Customer B', lname: 'Customer B', phone: '02222', Address: 'Address 1B', Address2: 'Address 2B', City: 'City B', State: 'State B', Sales: '001B' },
         { customerId: '003', customer: 'Customer C', fname: 'Customer C', lname: 'Customer C', phone: '03333', Address: 'Address 1C', Address2: 'Address 2C', City: 'City C', State: 'State C', Sales: '001A' },
@@ -22,7 +22,7 @@ const Customers = () => {
                 <div className="relative">
                     <input
                         type="text"
-                        placeholder="Search products"
+                        placeholder="Search customers"
                         className="border-2 border-black bg-[#f5f5f5] rounded-md py-2 pl-13 pr-4
                          "
                     />
@@ -30,7 +30,6 @@ const Customers = () => {
                         <IoSearch className="w-5 h-5" />
                     </span>
                 </div>
-
             </div>
             <table className="w-full border overflow-x-scroll border-blue-300">
                 <thead className="bg-[#f5f5f5] border-b-2 border-[#258cbf]">
@@ -48,18 +47,18 @@ const Customers = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {products.map((product, idx) => (
+                    {customers.map((customer, idx) => (
                         <tr key={idx} className="hover:bg-gray-50">
-                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{product.customer}</td>
-                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{product.customerId}</td>
-                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{product.fname}</td>
-                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{product.lname}</td>
-                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{product.phone}</td>
-                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{product.Address}</td>
-                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{product.Address2}</td>
-                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{product.City}</td>
-                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{product.State}</td>
-                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{product.Sales}</td>
+                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{customer.customer}</td>
+                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{customer.customerId}</td>
+                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{customer.fname}</td>
+                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{customer.lname}</td>
+                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{customer.phone}</td>
+                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{customer.Address}</td>
+                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{customer.Address2}</td>
+                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{customer.City}</td>
+                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{customer.State}</td>
+                            <td className="border-t font-medium text-center border-[#42befb] px-4 py-2 whitespace-nowrap">{customer.Sales}</td>
                         </tr>
                     ))}
                 </tbody>
