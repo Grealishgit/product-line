@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaPlus } from 'react-icons/fa';
 import { IoSearch } from 'react-icons/io5';
 
 const Customers = () => {
@@ -12,8 +13,9 @@ const Customers = () => {
         <div className="max-w-4xl mx-auto px-4 py-8">
             <div className='items-center justify-center w-full flex flex-col mb-6'>
                 <h1 className="text-3xl font-bold text-center mb-6">Customers</h1>
-                <button className="bg-[#4a90e2] cursor-pointer text-white px-8 py-1.5 
+                <button className="bg-[#4a90e2] items-center flex flex-row gap-2 cursor-pointer text-white px-8 py-1.5 
                 rounded hover:bg-blue-400 transition">
+                    <FaPlus className='text-black text-lg' />
                     Add Customer
                 </button>
             </div>
